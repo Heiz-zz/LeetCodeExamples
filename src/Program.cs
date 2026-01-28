@@ -9,7 +9,8 @@ namespace LeetCode_Examples
             while(true)
             {
                 System.Console.WriteLine("Select:\n" + 
-                                            "7. Reverse Integer\n");
+                                            "7. Reverse Integer\n" +
+                                            "8 String to Integer (atoi)\n");
 
                 int input = Convert.ToInt32(Console.ReadLine());
 
@@ -20,6 +21,11 @@ namespace LeetCode_Examples
                         reverseInteger.Reverse_Integer();
                         System.Console.WriteLine(" ");
                         break;
+                    case 8:
+                        StringToIntegerAtoi atoi = new StringToIntegerAtoi();
+                        atoi.StringToInteger();
+                        System.Console.WriteLine(" ");
+                        break;    
                 }
             }
         }
