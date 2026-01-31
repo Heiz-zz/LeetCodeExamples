@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Threading;
 
 // https://leetcode.com/problems/reverse-integer/description/
 
@@ -15,9 +16,11 @@ namespace LeetCode_Examples
 
             ReverseInteger qp = new ReverseInteger();
             System.Console.WriteLine($"Answer: {qp.Solution(x)}");   
+
+            Thread.Sleep(2000);
         }
 
-        int Solution(int x)
+        private int Solution(int x)
         {
             char minus = '+';
             int output;

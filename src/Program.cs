@@ -10,7 +10,8 @@ namespace LeetCode_Examples
             {
                 System.Console.WriteLine("Select:\n" + 
                                             "7. Reverse Integer\n" +
-                                            "8 String to Integer (atoi)\n");
+                                            "8. String to Integer (atoi)\n" + 
+                                            "9. Palindrome Number\n");
 
                 int input = Convert.ToInt32(Console.ReadLine());
 
@@ -25,7 +26,12 @@ namespace LeetCode_Examples
                         StringToIntegerAtoi atoi = new StringToIntegerAtoi();
                         atoi.StringToInteger();
                         System.Console.WriteLine(" ");
-                        break;    
+                        break; 
+                    case 9:
+                        PalindromeNumber palindrome = new PalindromeNumber();
+                        palindrome.PN();
+                        System.Console.WriteLine(" ");
+                        break;       
                 }
             }
         }

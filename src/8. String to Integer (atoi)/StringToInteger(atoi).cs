@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using System.Globalization;
 using System.Security.Cryptography.X509Certificates;
+using System.Threading;
 
 // https://leetcode.com/problems/string-to-integer-atoi/description/
 
@@ -23,9 +24,10 @@ namespace LeetCode_Examples
                     break;
                 }
             }
+            Thread.Sleep(2000);
         }
 
-        int Solution(string input)
+        private int Solution(string input)
         {
             char minus = '+';
             List<char> Char = input.ToList();
