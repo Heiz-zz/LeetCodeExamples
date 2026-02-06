@@ -11,7 +11,8 @@ namespace LeetCode_Examples
                 System.Console.WriteLine("Select:\n" + 
                                             "7. Reverse Integer\n" +
                                             "8. String to Integer (atoi)\n" + 
-                                            "9. Palindrome Number\n");
+                                            "9. Palindrome Number\n" + 
+                                            "10. Regular Expression Matching\n");
 
                 int input = Convert.ToInt32(Console.ReadLine());
 
@@ -31,7 +32,12 @@ namespace LeetCode_Examples
                         PalindromeNumber palindrome = new PalindromeNumber();
                         palindrome.PN();
                         System.Console.WriteLine(" ");
-                        break;       
+                        break; 
+                    case 10:
+                        regular_expression_matching matching = new regular_expression_matching();
+                        matching.REM();
+                        System.Console.WriteLine(" ");
+                        break;    
                 }
             }
         }
