@@ -13,7 +13,8 @@ namespace LeetCode_Examples
                                             "8. String to Integer (atoi)\n" + 
                                             "9. Palindrome Number\n" + 
                                             "10. Regular Expression Matching\n" + 
-                                            "11. Container With Most Water\n");
+                                            "11. Container With Most Water\n" + 
+                                            "12. Integer to Roman\n");
 
                 int input = Convert.ToInt32(Console.ReadLine());
 
@@ -43,7 +44,12 @@ namespace LeetCode_Examples
                         container_with_most_water container = new container_with_most_water();
                         container.CWMW();
                         System.Console.WriteLine(" ");
-                        break;    
+                        break;
+                    case 12:
+                        IntegerToRoman integerToRoman = new IntegerToRoman();
+                        integerToRoman.ITR();
+                        System.Console.WriteLine(" ");
+                        break;        
                 }
             }
         }
