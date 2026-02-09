@@ -7,12 +7,18 @@ namespace LeetCode_Examples
     {
         public void REM()
         {
-            var s = Console.ReadLine();
-            var p = Console.ReadLine();
+            while(true)
+            {
+                string? s = Console.ReadLine();
+                string? p = Console.ReadLine();
 
-            bool output = REMLogic(s, p, 0, 0);
-            System.Console.WriteLine(output);
-
+                if(!string.IsNullOrEmpty(s) && !string.IsNullOrEmpty(p))
+                {
+                    bool output = REMLogic(s, p, 0, 0);
+                    System.Console.WriteLine(output);
+                }
+                break;
+            }
             Thread.Sleep(2000);
         }
 
