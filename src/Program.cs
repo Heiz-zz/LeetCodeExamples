@@ -14,7 +14,9 @@ namespace LeetCode_Examples
                                             "9. Palindrome Number\n" + 
                                             "10. Regular Expression Matching\n" + 
                                             "11. Container With Most Water\n" + 
-                                            "12. Integer to Roman\n");
+                                            "12. Integer to Roman\n" +
+                                            "13. Roman to Integer\n" + 
+                                            "14. Longest Common Prefix\n");
 
                 int input = Convert.ToInt32(Console.ReadLine());
 
@@ -49,7 +51,17 @@ namespace LeetCode_Examples
                         IntegerToRoman integerToRoman = new IntegerToRoman();
                         integerToRoman.ITR();
                         System.Console.WriteLine(" ");
-                        break;        
+                        break;      
+                    case 13:
+                        RomanToInteger romanToInteger = new RomanToInteger();
+                        romanToInteger.RTI();
+                        System.Console.WriteLine(" ");
+                        break;
+                    case 14:
+                        LongestCommonPrefix longestCommonPrefix = new LongestCommonPrefix();
+                        longestCommonPrefix.LCP();
+                        System.Console.WriteLine(" ");
+                        break;    
                 }
             }
         }
